@@ -45,17 +45,17 @@ export default function PaymentPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-orange-50 to-white py-12 px-4">
+    <div className="min-h-screen bg-gradient-to-b from-orange-50 to-white py-6 sm:py-12 px-4">
       <div className="container mx-auto max-w-2xl">
-        <div className="bg-white rounded-2xl shadow-2xl p-8 md:p-12">
-          <div className="text-center mb-8">
-            <div className="w-20 h-20 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <CreditCard className="w-10 h-10 text-primary-600" />
+        <div className="bg-white rounded-2xl shadow-2xl p-6 sm:p-8 md:p-12">
+          <div className="text-center mb-6 sm:mb-8">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <CreditCard className="w-8 h-8 sm:w-10 sm:h-10 text-primary-600" />
             </div>
-            <h1 className="text-4xl font-bold text-gray-900 mb-2">
+            <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-2">
               Payment Gateway
             </h1>
-            <p className="text-gray-600">
+            <p className="text-sm sm:text-base text-gray-600">
               Secure dummy payment simulation
             </p>
           </div>

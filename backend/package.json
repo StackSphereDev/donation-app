@@ -7,7 +7,9 @@
     "dev": "nodemon src/server.ts",
     "build": "tsc",
     "start": "node dist/server.js",
-    "lint": "eslint . --ext .ts"
+    "prod": "npm run build && npm start",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix"
   },
   "keywords": ["donation", "express", "typescript", "mongodb"],
   "author": "",

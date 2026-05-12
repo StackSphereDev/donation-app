@@ -51,6 +51,12 @@ export const getDonationById = async (
   try {
     const { id } = req.params;
 
+    // Validate ObjectId format
+    if (!id.match(/^[0-9a-fA-F]{24}$/)) {
+      ApiResponse.error(res, 'Invalid donation ID format', 400);
+      return;
+    }
+
     const donation = await Donation.findById(id);
 
     if (!donation) {
@@ -72,6 +78,12 @@ export const updatePaymentStatus = async (
   try {
     const { id } = req.params;
     const { paymentStatus } = req.body;
+
+    // Validate ObjectId format
+    if (!id.match(/^[0-9a-fA-F]{24}$/)) {
+      ApiResponse.error(res, 'Invalid donation ID format', 400);
+      return;
+    }
 
     const donation = await Donation.findByIdAndUpdate(
       id,

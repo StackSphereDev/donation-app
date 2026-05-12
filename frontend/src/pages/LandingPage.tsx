@@ -25,25 +25,25 @@ export default function LandingPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-orange-50 to-white">
-      <div className="container mx-auto px-4 py-8 max-w-6xl">
-        <header className="text-center mb-12">
-          <h1 className="text-5xl font-bold text-gray-900 mb-4">
+      <div className="container mx-auto px-4 py-6 sm:py-8 max-w-6xl">
+        <header className="text-center mb-8 sm:mb-12">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
             Divine Annadaan Seva
           </h1>
-          <p className="text-xl text-gray-600">
+          <p className="text-lg sm:text-xl text-gray-600">
             Nourishing the Soul of the Char Dham Yatra
           </p>
         </header>
 
-        <div className="bg-white rounded-2xl shadow-2xl overflow-hidden mb-12">
-          <div className="relative h-96 bg-gradient-to-r from-primary-600 to-primary-800">
+        <div className="bg-white rounded-2xl shadow-2xl overflow-hidden mb-8 sm:mb-12">
+          <div className="relative h-64 sm:h-80 md:h-96 bg-gradient-to-r from-primary-600 to-primary-800">
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center text-white px-6">
-                <Heart className="w-20 h-20 mx-auto mb-6" />
-                <h2 className="text-4xl font-bold mb-4">
+              <div className="text-center text-white px-4 sm:px-6">
+                <Heart className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 mx-auto mb-4 sm:mb-6" />
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">
                   Feed the Pilgrims, Nourish the Soul
                 </h2>
-                <p className="text-xl max-w-2xl mx-auto">
+                <p className="text-base sm:text-lg md:text-xl max-w-2xl mx-auto">
                   Support our mission to provide nutritious meals to thousands of pilgrims
                   on their sacred journey through the Char Dham
                 </p>
@@ -51,8 +51,8 @@ export default function LandingPage() {
             </div>
           </div>
 
-          <div className="p-8 md:p-12">
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="p-6 sm:p-8 md:p-12">
+            <div className="grid sm:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
               <div className="text-center p-6 bg-primary-50 rounded-xl">
                 <Users className="w-12 h-12 mx-auto mb-4 text-primary-600" />
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">50,000+</h3>
@@ -71,11 +71,11 @@ export default function LandingPage() {
             </div>
 
             <div className="max-w-4xl mx-auto">
-              <h3 className="text-3xl font-bold text-center mb-8 text-gray-900">
+              <h3 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-8 text-gray-900">
                 Choose Your Donation Amount
               </h3>
 
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mb-6 sm:mb-8">
                 {PRESET_AMOUNTS.map((amount) => (
                   <DonationCard
                     key={amount}

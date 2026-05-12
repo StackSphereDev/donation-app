@@ -1,10 +1,8 @@
-import dotenv from 'dotenv';
-dotenv.config();
-
 import app from './app';
 import { connectDatabase } from './config/database';
+import { env } from './config/env';
 
-const PORT = process.env.PORT || 5000;
+const PORT = env.PORT;
 
 const startServer = async () => {
   try {
@@ -12,7 +10,7 @@ const startServer = async () => {
     
     app.listen(PORT, () => {
       console.log(`🚀 Server is running on port ${PORT}`);
-      console.log(`📍 Environment: ${process.env.NODE_ENV || 'development'}`);
+      console.log(`📍 Environment: ${env.NODE_ENV}`);
       console.log(`🔗 Health check: http://localhost:${PORT}/health`);
     });
   } catch (error) {

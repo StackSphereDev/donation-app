@@ -44,21 +44,21 @@ export default function DonorForm() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-orange-50 to-white py-12 px-4">
+    <div className="min-h-screen bg-gradient-to-b from-orange-50 to-white py-6 sm:py-12 px-4">
       <div className="container mx-auto max-w-2xl">
         <button
           onClick={() => navigate('/')}
-          className="flex items-center gap-2 text-primary-600 hover:text-primary-700 mb-6 font-medium"
+          className="flex items-center gap-2 text-primary-600 hover:text-primary-700 mb-4 sm:mb-6 font-medium"
         >
           <ArrowLeft className="w-5 h-5" />
           Back to Home
         </button>
 
-        <div className="bg-white rounded-2xl shadow-2xl p-8 md:p-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-2 text-center">
+        <div className="bg-white rounded-2xl shadow-2xl p-6 sm:p-8 md:p-12">
+          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-2 text-center">
             Donor Details
           </h1>
-          <p className="text-gray-600 text-center mb-8">
+          <p className="text-sm sm:text-base text-gray-600 text-center mb-6 sm:mb-8">
             Please fill in your details to complete the donation
           </p>
 

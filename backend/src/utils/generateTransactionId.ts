@@ -1,5 +1,8 @@
+import crypto from 'crypto';
+
 export const generateTransactionId = (): string => {
   const timestamp = Date.now().toString(36);
-  const randomStr = Math.random().toString(36).substring(2, 15);
-  return `TXN${timestamp}${randomStr}`.toUpperCase();
+  const randomBytes = crypto.randomBytes(8).toString('hex');
+  const uniqueId = `${timestamp}${randomBytes}`;
+  return `TXN${uniqueId}`.toUpperCase();
 };

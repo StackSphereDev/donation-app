@@ -13,6 +13,9 @@ import { validateRequest } from '../middleware/validateRequest';
 
 const router = Router();
 
+// Specific routes first to avoid conflicts with parameterized routes
+router.get('/', getAllDonations);
+
 router.post(
   '/create',
   createDonationValidator,
@@ -28,7 +31,5 @@ router.patch(
   validateRequest,
   updatePaymentStatus
 );
-
-router.get('/', getAllDonations);
 
 export default router;

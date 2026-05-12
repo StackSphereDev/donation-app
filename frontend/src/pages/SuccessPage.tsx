@@ -50,16 +50,16 @@ export default function SuccessPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-green-50 to-white py-12 px-4">
+    <div className="min-h-screen bg-gradient-to-b from-green-50 to-white py-6 sm:py-12 px-4">
       <div className="container mx-auto max-w-3xl">
         <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
-          <div className="bg-gradient-to-r from-green-500 to-green-600 p-8 text-center text-white">
-            <CheckCircle className="w-24 h-24 mx-auto mb-4" />
-            <h1 className="text-4xl font-bold mb-2">Thank You!</h1>
-            <p className="text-xl">Your donation has been received successfully</p>
+          <div className="bg-gradient-to-r from-green-500 to-green-600 p-6 sm:p-8 text-center text-white">
+            <CheckCircle className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 mx-auto mb-4" />
+            <h1 className="text-3xl sm:text-4xl font-bold mb-2">Thank You!</h1>
+            <p className="text-lg sm:text-xl">Your donation has been received successfully</p>
           </div>
 
-          <div className="p-8 md:p-12">
+          <div className="p-6 sm:p-8 md:p-12">
             <div className="bg-green-50 border-l-4 border-green-500 p-6 mb-8">
               <p className="text-lg text-green-900">
                 Your generous contribution will help us serve nutritious meals to pilgrims
